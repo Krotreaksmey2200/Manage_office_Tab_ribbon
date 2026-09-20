@@ -13,7 +13,14 @@
   <img src="https://img.shields.io/badge/Qt-6.x-41CD52?style=flat-square&logo=qt" alt="Qt6" />
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=flat-square" alt="Platform" />
   <img src="https://img.shields.io/badge/Architecture-Apple%20Silicon%20%7C%20Intel-blue?style=flat-square" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Release-v1.0.0-orange?style=flat-square" alt="Release" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Krotreaksmey2200/Manage_office_Tab_ribbon/releases/download/v1.0.0/Office-Ribbon-Extension-Manager-v1.0.pkg">
+    <img src="https://img.shields.io/badge/Download-macOS%20Installer%20(.pkg)-185ABD?style=for-the-badge&logo=apple" alt="Download macOS PKG" />
+  </a>
 </p>
 
 ---
