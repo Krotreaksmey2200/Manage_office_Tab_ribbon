@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <title>Office Extension &amp; Ribbon Manager</title>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+    <options customize="never" require-scripts="false" hostArchitectures="x86_64,arm64"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.khmeroffice.extensionmanager"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.khmeroffice.extensionmanager" visible="false">
+        <pkg-ref id="com.khmeroffice.extensionmanager"/>
+    </choice>
+    <pkg-ref id="com.khmeroffice.extensionmanager" version="1.0.0" onConclusion="none">OfficeExtensionManager_component.pkg</pkg-ref>
+</installer-gui-script>

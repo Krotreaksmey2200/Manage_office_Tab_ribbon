@@ -1,0 +1,43 @@
+# Build artifacts
+build/
+build-*/
+cmake-build-*/
+bin/
+out/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Package outputs and temporary packaging roots
+*.pkg
+*.dmg
+release/
+packaging/pkgroot/
+packaging/*.pkg
+
+# Compiled binaries and objects
+*.o
+*.obj
+*.dylib
+*.so
+*.a
+*.app
+OfficeExtensionManager.app
+
+# Qt generated files
+*_autogen/
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*~
+.agents/
