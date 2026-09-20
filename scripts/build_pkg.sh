@@ -10,10 +10,11 @@ echo "=== 1. Building application with CMake ==="
 echo "=== 2. Deploying Qt frameworks with macdeployqt ==="
 /opt/homebrew/bin/macdeployqt build/OfficeExtensionManager.app -verbose=0
 
-echo "=== 3. Preparing PKG root ==="
+echo "=== 3. Preparing and Signing App Bundle for Launchpad ==="
 rm -rf packaging/pkgroot
 mkdir -p packaging/pkgroot/Applications
-cp -R build/OfficeExtensionManager.app packaging/pkgroot/Applications/
+cp -R build/OfficeExtensionManager.app "packaging/pkgroot/Applications/Office Extension & Ribbon Manager.app"
+codesign --force --deep -s - "packaging/pkgroot/Applications/Office Extension & Ribbon Manager.app"
 
 echo "=== 4. Building Component PKG ==="
 pkgbuild --root packaging/pkgroot \
